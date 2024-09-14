@@ -7,14 +7,29 @@ body {
 
 /* Style the header */
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #007bff;
     padding: 15px;
-    text-align: center;
 }
 
+/* Logo container styling */
+.logo-container {
+    display: inline-block;
+}
+
+/* Style the logo */
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+/* Styling for the navigation links */
 header nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 header nav ul li {
@@ -26,14 +41,6 @@ header nav ul li a {
     color: white;
     font-size: 18px;
     text-decoration: none;
-}
-
-/* Add a "logo" character to the header */
-header nav ul li:first-child::before {
-    content: "&#9733;"; /* Unicode star character */
-    font-size: 24px;
-    color: yellow;
-    margin-right: 10px;
 }
 
 /* Styling for the main content */
