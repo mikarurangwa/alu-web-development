@@ -19,10 +19,11 @@ header {
     display: inline-block;
 }
 
-/* Style the logo */
-.logo {
-    height: 50px;
+/* Adjust the logo size to match the size of the "Home" link */
+.small-logo {
+    height: 20px;
     width: auto;
+    vertical-align: middle;
 }
 
 /* Styling for the navigation links */
