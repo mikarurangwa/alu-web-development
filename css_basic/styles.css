@@ -1,2 +1,50 @@
 /* styles.css */
 
+/* Step 1: Apply Flexbox to body */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Step 2: Apply Flexbox to main */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+/* Step 3: Set flex for article and aside */
+article {
+    flex: 2; /* Article takes 2/3 of the width */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px;
+    background-color: #f0f0f0; /* Optional styling for better visual separation */
+}
+
+aside {
+    flex: 1; /* Aside takes 1/3 of the width */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px;
+    background-color: #e0e0e0; /* Optional styling for better visual separation */
+}
+
+/* Step 4: Styling header and footer */
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Optional: Make header and footer fixed */
+header {
+    position: relative; /* Optional: You can change this to 'fixed' if desired */
+    width: 100%;
+}
+
+footer {
+    position: relative; /* Optional: You can change this to 'fixed' if desired */
+    width: 100%;
+    margin-top: auto;
+}
