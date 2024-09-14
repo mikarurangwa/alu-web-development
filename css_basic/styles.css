@@ -7,30 +7,14 @@ body {
 
 /* Style the header */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color: #007bff;
     padding: 15px;
+    text-align: center;
 }
 
-/* Logo container styling */
-.logo-container {
-    display: inline-block;
-    vertical-align: middle; /* Ensures logo aligns vertically in the middle */
-}
-
-/* Adjust the logo size to match the size of the "Home" link more precisely */
-.small-logo {
-    height: 1.2em; /* Use em unit to scale relative to the surrounding text */
-    width: auto;  /* Maintain the aspect ratio */
-}
-
-/* Styling for the navigation links */
 header nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
 }
 
 header nav ul li {
@@ -40,8 +24,16 @@ header nav ul li {
 
 header nav ul li a {
     color: white;
-    font-size: 1.2em; /* Ensure text size matches logo size for cohesion */
+    font-size: 18px;
     text-decoration: none;
+}
+
+/* Add a "logo" character to the header */
+header nav ul li:first-child::before {
+    content: "&#9733;"; /* Unicode star character */
+    font-size: 24px;
+    color: yellow;
+    margin-right: 10px;
 }
 
 /* Styling for the main content */
